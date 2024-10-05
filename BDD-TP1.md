@@ -49,6 +49,8 @@ dessinateur (libelle du type = Dessin). (6 min)
 ------
 Script sql : [1sio_Tp01.sql]({{site.baseurl}}/1sio_Tp01.sql){:target="_blank"}
 
+Script sql : [1sio_Tp01.sql](1sio_Tp01.sql){:target="_blank"}
+
 **Travail à faire :**
 
 ➡ Reprendre les requêtes effectuées dans la partie 1<br>
