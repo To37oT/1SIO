@@ -47,7 +47,7 @@ dessinateur (libelle du type = Dessin). (6 min)
 ------
 ## Partie2 : avec la machine
 ------
-Script sql : [1sio_Tp01.sql](https://github.com/To37oT/1SIO/blob/20462d59f2204fd61960f900db5fad25ad912b31/1Sio_Tp01.sql)
+Script sql : [1sio_Tp01.sql](https://raw.githubusercontent.com/To37oT/1SIO/refs/heads/main/1Sio_Tp01.sql)
 
 **Travail à faire :**
 
