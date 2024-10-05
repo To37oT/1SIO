@@ -6,113 +6,74 @@ published: true
 date: 2024
 ---
 
-# Variables et affichage de données
+# TP1 : Bases de données
+------
+## Partie1 : sans la machine
+------
+**Gestion des emprunts de livres**
+![image](https://github.com/user-attachments/assets/14ec4e7d-2318-4f7b-b1cd-5c392f1ad675)
 
-## PARTIE 1 : Réaliser une liste déroulante
+*(Temps maxi approximatif à passer sur une telle requête un jour de devoir/d'examen, donc 45 min maxi au total).*
 
-### 1 - Créer un composant avec 7 variantes
-![image](https://github.com/user-attachments/assets/93ea4c7f-1fbe-4aba-b051-9424f66d6fcd)
+1. Afficher les liste des livres (titre, nb de page), du livre qui a le plus de page à celui qui en a le
+moins. (3 min)
 
-### 2 - Ajouter un changement de variante au clic pour les listes fermées
-![image](https://github.com/user-attachments/assets/228c2d74-d8bc-4f42-ac75-81ff0e0fa26a)
+2. Afficher les séries qui disposent de plus de 30 tomes (nom, nombre de tomes). (3 min)
 
-### 3 - Créer un composant qui servira à créer l'effet visuel du survol
-<p>Ce composant possède 2 états : normal et survolé. Etat normal, opacité de 0% et état survolé, opacité de 50%</p>
+3. Le nombre d'exemplaire du livre ayant comme titre Panik Room. (5 min)
 
-![image](https://github.com/user-attachments/assets/bc44c398-4821-4dd5-a8c3-2625182fc0a7)<br>
+4. Le nombre de livres empruntés par Bob MAURANE en 2023. (5 min)
 
-![image](https://github.com/user-attachments/assets/3cfdc528-a36d-47c9-860b-f75b68a7fca9)<br>
+5. L'emprunteur (ou les) qui a le plus d'avertissements (nom, prénom, nombre d'avertissements).
+(6 min)
 
-![image](https://github.com/user-attachments/assets/920f215a-082a-4ac0-a71d-525974400e60)
+6. Les noms et prénoms des emprunteurs qui ont empruntés le livre Les Complots d'Iznogoud
+depuis Juin 2023. (6 min)
 
-### 4 - Venir placer ce composant sur les éléments de la liste déroulée
-<p>il est possible de changer l'opacité le temps de placer l'éléments</p>
+7. La liste des livres (titres, numéro exemplaire) qui ne sont toujours pas rendus. (3 min)
 
-![image](https://github.com/user-attachments/assets/059a8246-243f-4f08-af13-1e3b27595e77)<br>
+8. La liste des emprunteurs (id, nom, prénom) par ordre alphabétique et sans doublons, qui ont
+rendus des livres en retard en 2023. (5 min)
 
-![image](https://github.com/user-attachments/assets/6acf199f-b9e1-4b93-8841-a9ff893e5075)
+9. Le nombre total d'avertissements délivrés. (3 min)
 
-### 5 - Sur chaque éléments ainsi placé, fabriquer l'interraction de retour.
-![image](https://github.com/user-attachments/assets/435094d1-32d8-4425-bb6d-02658174b493)
+10. Afficher les livres (titre) auxquels l'auteur ayant comme pseudo Walt a participé en tant que
+dessinateur (libelle du type = Dessin). (6 min)
 
-### 6 - Tester la liste déroulante
-![image](https://github.com/user-attachments/assets/979415da-1125-4174-a4dd-fedd5dbd8902)
-
-## Partie 2 : Ajouter une variable
-
-### 1 - Modifier une variables en fonction des choix
-Ici une variable **val** sur le premier nombre (le composant au dessus)<br>
-La variable s'ajoute sur l'évènement "clic" (il y a déjà une interraction au clic, on ajoute l'effet sur la variable en plus)
-
-![image](https://github.com/user-attachments/assets/aa197a05-79f5-4bc3-927e-9f41c21bafd8)
-
-Ajuster la valeur de la variable en fonction de la valeur cliquée (2 si on clique sur le nombre 2, 3 si on clique sur le nombre 3,...)
-
-Attention, on ne recréé pas de variable une fois **val** créé, on modifie sa valeur.
-
-### 2 - Afficher la variable
-Pour afficher une variable, créer une zone de texte puis à droite, cliquer pour ajouter une variable
-![image](https://github.com/user-attachments/assets/e27a200f-f50b-4e0b-a253-1d7421b2a847)<br>
-
-![image](https://github.com/user-attachments/assets/b1913a73-55d9-41e7-96cf-0a79b2858137)<br>
-
-![image](https://github.com/user-attachments/assets/e3b8a527-939a-4241-8c0a-211a72cf82b4)
-
-### 3 - Tester la liste déroulante et l'affichage de la variable
-
-![image](https://github.com/user-attachments/assets/5b0652dc-a31b-4db5-b78e-edd6d838c76b)
-
-
-## Partie 3 : Calculs
-
-### 1 - Mécanisme
-L'objectif de cette dernière partie : insérer 2 listes déroulantes et afficher la somme des deux.
-Pour cela, il faut modifier le composant. Lorsqu'une liste sera activée, il faudra faire la différence entre sa valeur d'avant et sa nouvelle valeur et **ajouter** cette différence à la somme totale.
-
-En mathématiques, X + (-Y) équivaut à X - Y
-
-##### Exemple 1 : 
->     
->     liste 1 : 0
->     Liste 2 : 0
->     Total : 0
->     
->Si je passe "Liste 2" à la valeur 3, la différence est de +3 (nouvelle valeur - ancienne valeur = 3 - 0 = 3)
+##### Faire une pré-validation avant la partie 2
 >
->J'obtiens alors : 
->
->     liste 1 : 0
->     Liste 2 : 3
->     Total : 0 + (+3) = 3
+> Avoir fait toute la partie 1 avant de passer sur poste
 
-##### Exemple 2 : 
->     
->     liste 1 : 5
->     Liste 2 : 2
->     Total : 7
->     
->Si je passe "Liste 1" à la valeur 2, la différence est de -3 (nouvelle valeur - ancienne valeur = 2 - 5 = -3)
->
->J'obtiens alors : 
->
->     liste 1 : 2
->     Liste 2 : 3
->     Total : 8 + (-3) = 5
+------
+## Partie2 : avec la machine
+------
+Script sql : [1sio_Tp01.sql]({{site.baseurl}}/1sio_Tp01.sql){:target="_blank"}
 
-**Mécanisme à mettre en place :** 
+**Travail à faire :**
 
-Lorsque je clique sur une des 2 listes fermées, je vais mémoriser dans une variable la valeur cliquée (exemple : je clique sur le bouton 3 fermé, je mémorise 3)<br>
-![image](https://github.com/user-attachments/assets/ca8b9b4c-da53-40a5-b11f-5e15f1d34934)<br>
+➡ Reprendre les requêtes effectuées dans la partie 1<br>
+➡ Les exécuter<br>
+➡ Les corriger si vous n'obtenez pas le même résultat que celui attendu, et **ajouter en dessous de la version 1 la version corrigée en couleur**.
 
-![image](https://github.com/user-attachments/assets/4d4b4300-93c2-4be8-9436-adcd64b9d282)
+Voici ce que vous devez trouver comme réponse :
 
-Lorsque je clique sur une valeur dans la liste ouverte, j'utilise la valeur mémorisée précédemment pour calculer la différence.<br>
-Je profite de ce calcul pour mettre à jour la variable qui calcul la somme<br> 
-Avant :<br>
-![image](https://github.com/user-attachments/assets/16bbb44f-948e-4070-8feb-d3839eaa0d82)<br>
-Après : <br>
-![image](https://github.com/user-attachments/assets/af84a4c6-867d-4b74-a743-93cfe9826366)
+![image](https://github.com/user-attachments/assets/aa4a9d85-d242-41b4-994f-9c8a1f9be3b3)
 
-### 2 - Tester
-![image](https://github.com/user-attachments/assets/88c14f1a-12d5-4af1-a4c5-37236a00c695)
+![image](https://github.com/user-attachments/assets/71727022-52e2-4c1b-95fb-2bb5dfab3f99)
 
+![image](https://github.com/user-attachments/assets/e261c925-88e9-4eb7-b059-a66add8ca73d)
+
+![image](https://github.com/user-attachments/assets/c5a28754-748a-4e7a-ae3a-10b01bc4e2e2)
+
+![image](https://github.com/user-attachments/assets/843dfa2e-6916-44de-b1ad-bd3bd28964e8)
+
+![image](https://github.com/user-attachments/assets/439136b4-c789-41a5-a678-d30a96ea411f)
+
+![image](https://github.com/user-attachments/assets/09e184a3-775e-4752-959c-8f247ab3d462)
+
+![image](https://github.com/user-attachments/assets/64193d6a-42ea-446f-977b-4399030ae1fb)
+![image](https://github.com/user-attachments/assets/f7b1b023-071b-44b5-b502-d89de1ae3920)
+
+![image](https://github.com/user-attachments/assets/e87b6995-1fc1-4da8-8270-d09f5bd20499)
+
+![image](https://github.com/user-attachments/assets/2809a167-2365-4d6f-833f-92c829e58223)
