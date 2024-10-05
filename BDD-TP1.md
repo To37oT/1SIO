@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Champs, variables et calculs
-permalink: /figma4/
+title: TP1 - Bases de données
+permalink: /bdd-tp1/
 published: true
 date: 2024
 ---
