@@ -42,7 +42,7 @@ dessinateur (libelle du type = Dessin). (6 min)
 
 ##### Faire une pré-validation avant la partie 2
 >
-> Avoir fait toute la partie 1 avant de passer sur poste
+> Avoir fait toute la partie 1
 
 ------
 ## Partie2 : avec la machine
