@@ -6,7 +6,7 @@ published: true
 date: 2024
 ---
 
-# TP2 : Bases de données
+# TP3 : Bases de données
 ------
 
 Pour toutes les réponses attendues, les réponses doivent être justifiées et les requêtes utilisées doivent être indiquées.
