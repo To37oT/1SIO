@@ -18,6 +18,7 @@ On dispose de 3 scripts :
 - villes : table villes
 - regions : table régions
 
+
 ##### Ajouter la base sur le serveur
 > - Créer une base de données comportant les différentes tables fournies
 
